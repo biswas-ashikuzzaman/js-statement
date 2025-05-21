@@ -9,110 +9,124 @@
 
 <body>
     <script>
-        let day = 3;
-        let dayName;
+        // let day = 3;
+        // let dayName;
 
-        switch (day) {
-            case 1:
-                dayName = "Monday";
-                break;
-            case 2:
-                dayName = "Tuesday";
-                break;
-            case 3:
-                dayName = "Wednesday";
-                break;
-            case 4:
-                dayName = "Thursday";
-                break;
-            case 5:
-                dayName = "Friday";
-                break;
-            default:
-                dayName = "Weekend";
-        }
+        // switch (day) {
+        //     case 1:
+        //         dayName = "Monday";
+        //         break;
+        //     case 2:
+        //         dayName = "Tuesday";
+        //         break;
+        //     case 3:
+        //         dayName = "Wednesday";
+        //         break;
+        //     case 4:
+        //         dayName = "Thursday";
+        //         break;
+        //     case 5:
+        //         dayName = "Friday";
+        //         break;
+        //     default:
+        //         dayName = "Weekend";
+        // }
 
-        console.log(dayName); // Output: "Wednesday"
-        document.write(dayName);
+        // console.log(dayName); // Output: "Wednesday"
+        // document.write(dayName);
 
-        document.write("<br>")
-        let date = 2;
-        switch (date) {
-            case 1:
-                document.write("Sunday")
-                break;
-            case 2:
-                document.write("Monday");
-                break;
-            default: date
-                document.write("Off-day")
-        }
-        document.write("<br>");
-        // let name = "ashik";  // name should be a string
+        // document.write("<br>")
+        // let date = 2;
+        // switch (date) {
+        //     case 1:
+        //         document.write("Sunday")
+        //         break;
+        //     case 2:
+        //         document.write("Monday");
+        //         break;
+        //     default: date
+        //         document.write("Off-day")
+        // }
+        // document.write("<br>");
+        // // let name = "ashik";  // name should be a string
+        // // let Character;
+
+        // // switch (name) {
+        // //     case "ashik":        // case values must also be strings
+        // //         Character = "Good Boy";
+        // //         break;
+        // //     case "others":       // case must be a string value, not a variable unless defined
+        // //         Character = "Not good";
+        // //         break;
+        // //     default:
+        // //         Character = "Bad";
+        // // }
+
+        // // document.write(Character);
+        // // console.log(Character);
+
+        // document.write("<br>")
+
+        // let name = prompt("Enter your name:");
         // let Character;
 
         // switch (name) {
-        //     case "ashik":        // case values must also be strings
+        //     case "ashik":
         //         Character = "Good Boy";
         //         break;
-        //     case "others":       // case must be a string value, not a variable unless defined
-        //         Character = "Not good";
+        //     case "john":
+        //         Character = "Friendly Guy";
+        //         break;
+        //     case "lisa":
+        //         Character = "Smart Girl";
         //         break;
         //     default:
-        //         Character = "Bad";
+        //         Character = "Unknown Character";
         // }
 
-        // document.write(Character);
-        // console.log(Character);
+        // document.write("Character: " + Character);
+        // console.log("Character: " + Character);
+
+        // document.write("<br>")
+        // let letter = prompt("Enter a single letter:");
+        // // let result;
+
+        // // Convert to lowercase to handle both cases
+        // letter = letter.toLowerCase();
+
+        // switch (letter) {
+        //     case 'a':
+        //     case 'e':
+        //     case 'i':
+        //     case 'o':
+        //     case 'u':
+        //         document.write("Vowel") ;
+        //         break;
+        //     default:
+        //         // Check if input is a single alphabet letter
+        //         if (letter.match(/^[a-z]$/)) {
+        //             result = "Consonant";
+        //         } else {
+        //             result = "Invalid input. Please enter a single alphabet letter.";
+        //         }
+        // }
+
+        // document.write(result);
+        // console.log(result);
 
         document.write("<br>")
-
-        let name = prompt("Enter your name:");
-        let Character;
-
-        switch (name) {
-            case "ashik":
-                Character = "Good Boy";
-                break;
-            case "john":
-                Character = "Friendly Guy";
-                break;
-            case "lisa":
-                Character = "Smart Girl";
-                break;
-            default:
-                Character = "Unknown Character";
+        let num=prompt();
+        if (num % 2==0){
+            console.log("The number is even.");
+        } else{
+            console.log("The number is odd");
         }
-
-        document.write("Character: " + Character);
-        console.log("Character: " + Character);
-
         document.write("<br>")
-        let letter = prompt("Enter a single letter:");
-        // let result;
-
-        // Convert to lowercase to handle both cases
-        letter = letter.toLowerCase();
-
-        switch (letter) {
-            case 'a':
-            case 'e':
-            case 'i':
-            case 'o':
-            case 'u':
-                document.write("Vowel") ;
-                break;
-            default:
-                // Check if input is a single alphabet letter
-                if (letter.match(/^[a-z]$/)) {
-                    result = "Consonant";
-                } else {
-                    result = "Invalid input. Please enter a single alphabet letter.";
-                }
-        }
-
-        document.write(result);
+        let number =9;
+        let result=(number % 2==0) ? "This Number is Even.":"This Number is Odd";
         console.log(result);
+        
+        
 
 
     </script>
