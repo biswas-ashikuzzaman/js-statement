@@ -33,6 +33,60 @@
         }
 
         console.log(dayName); // Output: "Wednesday"
+        document.write(dayName);
+
+        document.write("<br>")
+        let date = 2;
+        switch (date) {
+            case 1:
+                document.write("Sunday")
+                break;
+            case 2:
+                document.write("Monday");
+                break;
+            default: date
+                document.write("Off-day")
+        }
+        document.write("<br>");
+        // let name = "ashik";  // name should be a string
+        // let Character;
+
+        // switch (name) {
+        //     case "ashik":        // case values must also be strings
+        //         Character = "Good Boy";
+        //         break;
+        //     case "others":       // case must be a string value, not a variable unless defined
+        //         Character = "Not good";
+        //         break;
+        //     default:
+        //         Character = "Bad";
+        // }
+
+        // document.write(Character);
+        // console.log(Character);
+
+        document.write("<br>")
+        
+        let name = prompt("Enter your name:");
+        let Character;
+
+        switch (name) {
+            case "ashik":
+                Character = "Good Boy";
+                break;
+            case "john":
+                Character = "Friendly Guy";
+                break;
+            case "lisa":
+                Character = "Smart Girl";
+                break;
+            default:
+                Character = "Unknown Character";
+        }
+
+        document.write("Character: " + Character);
+        console.log("Character: " + Character);
+
 
     </script>
 </body>
