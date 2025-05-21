@@ -66,7 +66,7 @@
         // console.log(Character);
 
         document.write("<br>")
-        
+
         let name = prompt("Enter your name:");
         let Character;
 
@@ -86,6 +86,33 @@
 
         document.write("Character: " + Character);
         console.log("Character: " + Character);
+
+        document.write("<br>")
+        let letter = prompt("Enter a single letter:");
+        // let result;
+
+        // Convert to lowercase to handle both cases
+        letter = letter.toLowerCase();
+
+        switch (letter) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.write("Vowel") ;
+                break;
+            default:
+                // Check if input is a single alphabet letter
+                if (letter.match(/^[a-z]$/)) {
+                    result = "Consonant";
+                } else {
+                    result = "Invalid input. Please enter a single alphabet letter.";
+                }
+        }
+
+        document.write(result);
+        console.log(result);
 
 
     </script>
